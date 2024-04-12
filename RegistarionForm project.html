@@ -1,0 +1,283 @@
+<DOCTTYPE! html>
+<html>
+	<head>
+		<title>registration form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			body::-webkit-scrollbar{display:none;}
+			.frm::-webkit-scrollbar{display:none;}
+			.layer::-webkit-scrollbar{display:none;}
+			.frm{	display:flex;
+				justify-content:center;
+				align-content:center;
+				border:2px solid white;
+				outline:2px solid white;
+				outline-offset:6px;
+				box-shadow:0px 0px 4px 8px ;
+				height:99.6%; width:99.8%;
+				background-image: url("https://www.hdcarwallpapers.com/walls/ferrari_488_gtb_4k_8k-HD.jpg");
+				background-repeat:no-repeat;
+				background-size:cover;
+				overflow: scroll;
+			    }
+
+			.layer{
+				 border:2px solid;
+				 outline:2px orange solid;
+				 outline-offset:6px;
+				 margin-top:16px;
+				 margin-bottom:30px;
+				 box-shadow:0px 0px 4px 8px rgba(0,0,0,0.3) ;
+				 background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7));
+				 overflow: scroll;
+				}
+
+			form{margin-left:20px;
+				margin-top:10px;
+				color:white;
+				outline:none;
+				over-flow:auto;
+				}
+			h{display:flex;
+				justify-content:center;
+				margin-top:10px;
+				font-size:20;
+				color:orange;
+				}
+
+
+			.mname{margin-left:110px}
+			#mname{margin-left:10px}
+
+			.lname{margin-left:100px}
+			#lname{margin-left:10px}
+
+
+			.ftrname{margin-left:50px}
+			#ftrname{margin-left:50px}
+			.mtrname{margin-left:190px}
+			#mtrname{margin-left:100px}
+
+			.dob{margin-left:50px}
+
+			.ctgr{margin-left:120px}
+
+			.gender{margin-left:100px}
+			 #male, #female {margin-left:50px}
+
+			.edu{margin-left:10px}
+
+			.fav{margin-left:170px;}
+			#clr{border:none;}
+
+			.course{margin-left:70px}
+			#html {margin-left:10px}
+			#pytn {margin-left:20px}
+			#css {margin-left:129px}
+			#ds {margin-left:37px}
+			#jsp {margin-left:129px}
+
+			.adrs{margin-left:200px;
+				color:orange;
+			}
+
+			.fl{margin-left:50px}
+			#fl{margin-left:50px}
+			.sl{margin-left:232px}
+			#sl{margin-left:100px}
+
+			.pin{margin-left:112px}
+			#pin{margin-left:10px}
+
+			.dst{margin-left:119px}
+			#dst{margin-left:10px}
+
+			.state{margin-left:50px}
+			#state{margin-left:50px}
+			.country{margin-left:239px}
+			#country{margin-left:100px}
+
+			.email{margin-left:50px}
+			#email{margin-left:50px}
+			.vemail{margin-left:177px}
+			#vemail{margin-left:100px}
+
+			.pswrd{margin-left:50px}
+			#pswrd{margin-left:50px}
+			.vpswrd{margin-left:209px}
+			#vpswrd{margin-left:100px}
+
+			.num{margin-left:50px}
+			#num{margin-left:50px}
+			.opnum{margin-left:200px}
+			#opnum{margin-left:100px}
+
+			#sbmt, #rst{margin-left:30px;
+					background-color:lightgreen;
+					cursor:pointer;
+					}
+			#mdfy{margin-left:170px;
+				background-color:lightgreen;
+				cursor:pointer;
+				}
+		</style>
+	</head>
+	<body>
+
+		<div class="frm">
+			<div class="layer">
+				<h><i><b><u>Online</u> <u>Registration</u> <u>Form</u></b></i></h>
+			  <!-- <div class="overlay"> -->
+					<form action="/action_page.php" >
+
+						<lable for="fname" class="fname">First Name:</lable>
+						<lable for="mname" class="mname">Midle Name:</lable>
+						<lable for="lname" class="lname">Last Name:</lable>
+						<br>
+						<input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+						<input type="text" name="mname" id="mname" placeholder="Your Middle Name(optional)">
+						<input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"><i class="fa-solid fa-user-tie-hair"></i>
+
+						<br><br>
+
+						<lable for="fathername" class="ftrname">Father Name:</lable>
+						<lable for="mothername" class="mtrname">Mother Name:</lable>
+						<br>
+						<input type="text" name="fathername" id="ftrname"  placeholder="Enter Your Father Name">
+						<input type="text" name="mothername" id="mtrname"  placeholder="Enter Your Mother Name">
+						<br><br>
+
+						<lable for="dob" class="dob">DOB:</lable>
+						<input type="date" name="birth" id="dob">
+
+						<lable for="categary" class="ctgr">CATEGARY:</lable>
+						<select class="categary">
+							<option id="general">--select--</option>
+							<option id="general">Genaral</option>
+							<option id="sc">SC</option>
+							<option id="st">ST</option>
+							<option id="obc">OBC</option>
+							<option id="ews">EWS</option>
+						</select>
+						<br><br>
+
+						<lable class="gender">GENDER:</lable>
+						<input type="radio"  name="gender" id="male"  value="MALE">
+						<lable for="male">Male</lable>
+						<input type="radio" id="female" name="gender" value="FEMALE">
+						<lable for="female">Female</lable>
+						<br><br>
+
+						<section class="edu">
+						<lable for="ssc">SSC:</lable>
+						<input type="text" name="year" id="ssc" placeholder="year of passing" >
+						<lable>MarksMemo:</lable>
+						<input type="file" id="file" name="file" value="marks memo">
+						<br><br>
+
+						<lable for="intermediat">12th:</lable>
+						<input type="text" name="year" id="intermediat" placeholder="year of passing">
+						<lable>MarksMemo:</lable>
+						<input type="file" id="file" name="file" value="marks memo">
+						<br><br>
+
+						<lable for="ug">UG:</lable>
+						<input type="text" name="year" id="ug" placeholder="year of passing">
+						<lable>MarksMemo:</lable>
+						<input type="file" id="file" name="file" value="marks memo">
+						<br><br>
+
+							<lable for="pg">PG:</lable>
+						<input type="text" name="year" id="pg" placeholder="year of passing">
+						<lable>MarksMemo:</lable>
+						<input type="file" id="file" name="file" value="marks memo">
+						<br><br>
+
+						<lable for="color" class="fav">FAV_COLOR:</lable>
+						<input type="color" name="color" id="clr">
+						</section>
+						<br>
+
+						<section class="course">
+						<lable for="checkbox">You Interested In:</lable>
+
+						<input type="checkbox" name="html" id="html" value="HTMl" ><lable>HTML</lable>
+						<input type="checkbox" name="python" id="pytn" value="PYTHON" ><lable>PYTHON</lable><br>
+						<input type="checkbox" name="css" id="css" value="CSS" ><lable>CSS</lable>
+						<input type="checkbox" name="datascience" id="ds" value="DATA SCIENCE" ><lable>DATA SCIENCE</lable><br>
+						<input type="checkbox" name="javascript" id="jsp" vallue="JAVA SCRIPT" ><lable>JSP</lable>
+						</section>
+						<br>
+
+						<lable for="address" class="adrs"><u>ADDRESS:</u></lable>
+						<br>
+						<lable for="address" class="fl">Line1:</lable>
+						<lable for="address" class="sl">Line2:</lable>
+						<br>
+						<input type="text" name="adress" id="fl" placeholder="Door.No/House.No/Street.No">
+						<input type="text" name="adress" id="sl" placeholder="Street Name/Colony Name">
+						<br><br>
+
+						<lable for="address" class="city">City/Town:</lable>
+						<lable for="address" class="pin">Zip Code:</lable>
+						<lable for="address" class="dst">District:</lable>
+						<br>
+						<input type="text" name="adress" id="city" placeholder="locality">
+						<input type="text" name="adress" id="pin" placeholder="enter your pincode">
+						<input type="text" name="adress" id="dst" placeholder="enter your district">
+						<br><br>
+
+						<lable for="address" class="state">State:</lable>
+						<lable for="address" class="country">Country:</lable>
+						<br>
+						<input type="text" name="adress" id="state" placeholder="Enter your state">
+						<input type="text" name="country" id="country" placeholder="Enter your country">
+						<br><br>
+
+
+						<lable for="email" class="email">Email Address:</lable>
+						<lable for="email" class="vemail">Verify Email Address:</lable>
+						<br>
+						<input type="email" name="email" id="email" placeholder="Enter your mail address">
+						<input type="email" name="vemail" id="vemail" placeholder="Verify your mail address">
+						<br><br>
+
+						<lable for="password" class="pswrd">Password:</lable>
+						<lable for="password" class="vpswrd">Verify Password:</lable>
+						<br>
+						<input type="password" name="password" id="pswrd" placeholder="enter your password ">
+						<input type="password" name="vpassword" id="vpswrd" placeholder="Verify your password">
+						<br><br>
+
+						<lable for="number" class="num">Mobile No:</lable>
+						<lable for="number" class="opnum">Mobile No:</lable>
+						<br>
+						<input type="text" name="number" id="num" placeholder="enter your mobile number" value="+91 " minlength="14" 				maxlength="14">
+						<input type="text" name="number" id="opnum" placeholder="(optional)"  minlength="14" maxlength="14">
+						<br><br>
+
+						<input type="button" name="modify" id="mdfy" value="Modify">
+
+						<input type="submit" name="submit" id="sbmt">
+
+						<input type="reset" name="reset" id="rst"><br><br>
+					</form>
+					<!--<i class="fa-duotone fa-user-tie-hair"></i>
+
+					<i class="fa-duotone fa-user-tie-hair-long"></i>
+
+					<i class="fa-duotone fa-envelope"></i>
+
+					<i class="fa-solid fa-key"></i>
+
+					<i class="fa-solid fa-mobile-notch"></i>-->
+			  <!-- <div> -->
+			<div>
+		<div>
+	</body>
+</html>
