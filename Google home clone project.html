@@ -1,0 +1,355 @@
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en-IN">
+  <head>
+    <title>google</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAw1BMVEVHcEz////////9/f39/f79/f33+Pj////b3d74+fny8/P19vYAAAD////w8fH////////9/f3///8+fu7ZRCpBmEtNnVXaTDbbUz79/Pz0uCtIm1EqdO2FqPJplvDqpJ282MDifG87l0DW4fvXOBWqzrDvurbt8v55oPLkjIH00Mx0sHuRvpVpq3BrrHL2wEn51Y/4zHbw6eP4uBf86MP0sw6EpvJEhdRSie50prrFrCrsrqfqkSrssavxrDPP48yyx/Yvv4yqAAAAEnRSTlMAWZFT48ytmAumbmsCSV/Uv52LM4rJAAABN0lEQVQokY2SiXKCMBCGEUHBW5qQhGgRKopn7zq9ff+n6mZLNIAz7T/OZDdf8rO7xrL+p749Gg5Hdv8CsoOT7ApqBCU1TNYOKmrX2DpereJ1hf56LhhhjBHCFqazh0lCOOeMwW8e44Z3Nk0Y52TO+ZyQxDRGT7hH3kUQiDjRRSnWVMEH4+ShUnGzcH16/CKfl9pxYb2LomehNvLp9AWULyF2ATqw3kfRLZ6eXKEmNxA7f0Fti/BaCaC2HWNBUTjThRwBqnWsW3mTIS1aWYJtrlvBIWQ0DCne/T4Un8QhWL6K9hIo3e1pKg+TqdrxjcHv4G4o4YhMX43BW11MspRKKSlNM0y7+g9tYSpm281mO8NJBa3zU2hV52owy+oIE4lO+fl5/gkL36s93N7Adx3H9Qe9GioOlNMflcoty3IDwqwAAAAASUVORK5CYII=">
+    <meta charset="UTF-8">
+    <meta content="origin" name="referrer">
+    <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
+    <link href="/manifest?pwa=webhp" crossorigin="use-credentials" rel="manifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+      html {
+        height: 100%;
+        font-size: 100%;
+        background-position:fixed;
+        overflow-y: scroll;
+      }
+       body {
+        font: 13px arial;
+        sans-serif;
+      }
+      nav{background-color:;
+      	text-align:right;
+      	margin-right:25px;
+      	margin-top:20px
+      }
+      .apps{height:15px; border:1 solid;
+      	border-radus:50px;
+      	outline:none;
+      	margin-bottom:-4px;
+      	position:relative;
+      	display:inline-block
+      }
+      .tooltip_text{
+        display:non;
+        width: 80px; height:10px;
+        top:50px;
+        right:40%;
+        margin-right:-30%;
+      	background-color: black;
+      	color: #fff;
+      	text-align: center;
+      	border-radius: 0px;
+      	padding:0px 0px 6px 0px;
+        margin-top:3px;
+        opacity:0.7;
+      	 /* Position the tooltip */
+        position:absolute ;
+        z-index:1 ;
+      }
+      .apps:hover .tooltiptext{display:block;}
+
+      .apps:hover{box-shadow:0px 1px 1px 0px}
+
+      .more_apps{
+        display:none;
+      	width: 300px; height:480px;
+      	top:60;
+       	right:31%;
+      	margin-right:-30%;
+        background-color: #fffffff;
+        color:red;
+        text-align: center;
+      	border: 2px solid ;
+      	border:2px solid white;
+        border-radius: 10px;
+        box-shadow:0 0 4px 0px black;
+      	overflow:auto;
+        /* Position the tooltip */
+       	position:absolute ;
+      }
+
+      a:focus + .more_apps{display:block;}
+
+      .sign_in  {
+        background-color:#4285f4;
+      	border-style:solid;
+      	color:white;
+      	border:none;
+      	line-height:  17px;
+       	padding:8 25 8 20 ;
+        border-radius: 2px;
+      	position:relative;
+      	display:inline-block
+      }
+      .tooltiptext{
+        visibility: hidden;
+    	  width: 100px; height:10px;
+        top:100%;
+        left:50%;
+        margin-left:-60%;
+    	  background-color: black;
+    	  color: #fff;
+    	  text-align: center;
+    	  border-radius: 0px;
+    	  padding: 0px 0px 6px 0px;
+        margin-top:2px;
+        opacity:0.7;
+        /* Position the tooltip */
+        position:absolute ;
+        z-index:1 ;
+      }
+      .sign_in:hover .tooltiptext{visibility:visible}
+
+      nav a{
+        text-decoration:none;
+      	margin-left:15px;
+      	color:black
+      }
+      a:hover{text-decoration:underline}
+
+      .logo{display:flex;
+      	height:90.9px;
+      	width:272px;
+      	margin: auto;
+      	margin-top:214px;
+      }
+
+      .search_bar{
+        height:100%;
+      	width:80%;
+      	margin-right:70p;
+      	border:none;
+      	outline:none;
+      	font-size:17;
+      	text-align:center;
+      }
+      .mic{height:40px;}
+      .cam{height:20px;margin-bottom:10px;}
+
+      .icon{
+        display:flex;
+      	flex-direction:rows;
+      	justify-content:center;
+      	align-items:center;
+      	align-content:center;
+      	background-color:lightgree;
+      	height:40px;
+      	width:585px;
+      	margin:30px  auto;
+      	text-align:center;
+      	font-size:17;
+      	border-radius:25px;
+      	box-shadow:0px 1px 4px 0px silver;
+      	border:none;
+      	outline:none;
+      }
+      .icon:hover {box-shadow:0px 1px 1px 2px silver
+      			}
+
+      .buttons	{
+      		background: ;
+      		height:50px;
+      		display:flex;
+      		justify-content:center;
+      		align-items: center;
+      		margin-top:30px; opacity:1
+      		box-shadow:0px 1px 4px 0px silver;
+      		}
+
+
+      .button{ 	margin-left:15px;
+      		height:35px;
+      		width:130px;border:none;
+      		outline:none;
+      		box-shadow:0px 1px 1px 1px silver
+      	 }
+      .button:hover{box-shadow:0px 1px 1px 2px silver}
+
+      .tag_line{text-decoration:none}
+      .tag_line:hover{text-decoration:underline}
+
+      .lng a{text-decoration:none;margin-left:10px; font-size:small}
+      a:hover{text-decoration:underline}
+
+
+      .footer{background-color:#f2f2f2; color: #666666;height:90px;position:absolute;bottom:0;left:0;right:0; border:solid #f2f2f2; justify-content:center; align-item:center;
+      		}
+      .ind1{padding-top:18px; padding-left:30px}
+
+      .footer1{border:1px solid #e4e4e4; margin-top:15px}
+
+      .l_ftr{float:left; margin-left:23px; padding-top:11px}
+
+      .r_ftr{float:right; margin-right:23px; padding-top:10px}
+
+      .footer a{text-decoration:none; text-align:right; margin-left:10px; color: #666666}
+      a:hover{text-decoration:underline}
+
+      .app1{height:50px;
+      	overflow:auto;
+      	margin-left:10px;
+      	margin-top:20px;
+
+      	}
+      .app2{height:35px;margin-left:10px;}
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- navigation items -->
+    <!-- use nav property -->
+
+    <nav>
+    	<a href="https://mail.google.com/mail/?authuser=0&ogbl" target="_self">Gmail</a>
+
+    	<a href=" https://www.google.co.in/imghp?hl=en&tab=ri&authuser=0&ogbl" target="block">Images</a>
+
+    	<a href="#" ><img class="apps" src="https://thumb.ibb.co/gykLCw/grid_menu.png"></a>
+
+      <div class="more_apps" >
+
+      <a href=""><img class=" app1 " src=" "></a>
+
+        <a href=" "><img class="app1" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-256.png"></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-01-256.png"></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-128.png "></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_playstore_google-512.png"></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-16-256.png "></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-02-256.png "></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-05-256.png "></a>
+
+        <a href=" "><img class=" app1 " src=" https://logowik.com/content/uploads/images/google-chat4663.jpg"></a>
+
+        <a href=" "><img class=" app1 " src="https://www.gstatic.com/images/branding/product/2x/contacts_2022_48dp.png "></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-07-256.png"></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-03-256.png"></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_translate_google-128.png"></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-08-256.png"></a>
+
+        <a href=" "><img class=" app1 " src="https://www.gstatic.com/myadcenter/logo/3c37071161daf097d22c76f6a4a2a61d.svg "></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/500/Google_Shopping-128.png "></a>
+        <hr>
+        <a href=" "><img class=" app1 " src="https://w7.pngwing.com/pngs/731/877/png-transparent-google-finance-hd-logo-thumbnail.png"></a>
+
+        <a href=" "><img class=" app1 " src="https://cdn4.iconfinder.com/data/icons/bloomies-files-and-documents/25/Google_Docs_Social_Interface-128.png "></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn2.iconfinder.com/data/icons/documents-31/128/Google_Docs_Spreadsheet.png">
+
+        <a href=" "><img class=" app1 " src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google_slides-1024.png "></a>
+
+        <a href=" "><img class=" app1 " src=" https://cdn.icon-icons.com/icons2/272/PNG/512/Play_Books_30007.png">
+
+        <a href=" "><img class=" app1 " src="https://cdn0.iconfinder.com/data/icons/tuts/128/hangouts.png "></a>
+
+        <a href=" "><img class=" app1 " src="https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png "></a>
+
+        <a href=""><img class=" app1 " src=" https://play-lh.googleusercontent.com/-LLcx5FJk4ZDPFbDZTHaSoYvaJLQByYoGciA0_LwGMVla2nhOFl7ZPxY8WdcBQht6VE=s96-rw"></a>
+
+        <a href=""><img class=" app1 " src=" https://www.gstatic.com/classroom/logo_square_rounded.svg"></a>
+
+        <a href=""><img class=" app1 " src=" data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%2F%3E%0A%20%20%3CclipPath%20id%3D%22a%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M23%2012c0%206.1-4.9%2011-11%2011S1%2018.1%201%2012%205.9%201%2012%201s11%204.9%2011%2011z%22%20overflow%3D%22visible%22%2F%3E%0A%20%20%3C%2FclipPath%3E%0A%20%20%3Cg%20clip-path%3D%22url(%23a)%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%2391BFFF%22%20d%3D%22M23%2012c0%206.1-4.9%2011-11%2011S1%2018.1%201%2012%205.9%201%2012%201s11%204.9%2011%2011z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cpath%20fill%3D%22%234285F4%22%20d%3D%22M1%2012c.3-4.6%205.8-7.7%2011%20.2%204.5%206.9%2010.1%205%2010.9%201.3V23H1V12z%22%20clip-path%3D%22url(%23a)%22%2F%3E%0A%20%20%3Cpath%20fill%3D%22%23C4E1FF%22%20d%3D%22M23%2011.5c-1.5%201.6-4.5%202.2-7.6-2.7C11.6%202.4%207.5%201.5%203.5%205V1H23v10.5z%22%20clip-path%3D%22url(%23a)%22%2F%3E%0A%20%20%3Cpath%20fill%3D%22%23F5F5F5%22%20d%3D%22M8%201.7c4.8-1.5%208.3%201.3%2010.7%205%201.6%202.5%202.6%202.6%203.9%202.2V1H8v.7z%22%20clip-path%3D%22url(%23a)%22%2F%3E%0A%20%20%3Cpath%20fill%3D%22%23255FDB%22%20d%3D%22M21.2%2018c-2.6%203.2-8.2%203.9-12.7-2-3.8-5-7.2-2.6-6.5.6V23h19.2v-5z%22%20clip-path%3D%22url(%23a)%22%2F%3E%0A%0A%3C%2Fsvg%3E"></a>
+
+        <a href=""><img class=" app1 " src="https://cdn-1.webcatalog.io/catalog/google-collections/google-collections-icon-filled-256.png?v=1675594948559 "></a>
+
+        <a href=""><img class=" app1 " src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Arts_and_Culture_Logo.png?20180114114312 "></a>
+
+        <!-- <a href=""><img class=" app1 " src=" https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/google-ads-icon.svg"></a> -->
+
+        <a href=""><img class=" app1 " src=" https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-17-256.png"></a>
+
+        <a href=""><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-13-256.png "></a>
+
+        <a href=""><img class=" app1 " src=" https://cdn4.iconfinder.com/data/icons/bloomies-files-and-documents/25/Google_Forms_Social_Interface-128.png"></a>
+
+        <a href=""><img class=" app1 " src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/128/chrome_web_store.png "></a>
+
+        <a href=""><img class=" app1 " src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_chrome-128.png "></a>
+        <br><br><br>
+
+        <a href="https://about.google/products/" class="mfg">More from Google</a>
+
+      </div>
+
+      <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ" target="_blank" class="sign_in">SignIn <span class="tooltiptext">Google Account</span> </a>
+
+    </nav>
+
+    <!-- insert gogle logo -->
+    <!-- insert google logo image using image tag with inside using class -->
+
+	 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="logo">
+
+    <!-- create search bar -->
+    <!-- we can use any class name here i used class name is search_bar -->
+    <div class="icon">
+      <i class="fa fa-search" style="color:#666666;"></i>
+      <input type="text" placeholder="Search Google or URL" name="search " class="search_bar"></input>
+      <span>
+        <img class="mic" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-1024.png">
+        <img class="cam" src="https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg/revision/latest/scale-to-width-down/250?cb=20221018010850">
+      </span>
+    </div>
+
+    <h class="buttons">
+    <input type="submit" value="Google Search" name="submit"  class="button"></input>
+    <input type="submit" value="I;am Feeling Lucky" name="submit" class="button"></input>
+    </h><br>
+
+    <center>
+    <a href="" class="tag_line" >Join the search for sustainability this Earth Day </a>
+    </center><br><br>
+
+    <center class="lng">
+    Google offered in:
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwj1jfWk773-AhWoZ2wGHfexB9AQ2ZgBCBI" target="block">English</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBQ" target="block">हिन्दी</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBU" target="block">বাংলা</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBY" target="block">తెలుగు</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBc" target="block">मराठी</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBg" target="block">தமிழ்</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBk" target="block">ગુજરાતી</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBo" target="block">ಕನ್ನಡ</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBs" target="block">മലയാളം</a>
+    <a href="https://www.google.com/setprefs?sig=0_hSR9_tlPqfovtCupcw8TTkCps1A%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwj52ODs5b3-AhWPmFYBHQgpCmIQ2ZgBCBw" target="block">ਪੰਜਾਬੀ</a>
+    </center>
+
+    <div class="footer">
+    	<div class="ind1">
+    	  India
+    	</div>
+    	<div class="footer1">
+    		<span class="l_ftr">
+    		<a href="">Careers</a>
+    		<a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+    		<a href="https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+    		<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+    		<a href="https://google.com/search/howsearchworks/?fg=1">How Search Work</a>
+    		</span>
+    		<span class="r_ftr">
+    		<a href="https://policies.google.com/privacy?hl=en-IN&fg=1">🔏privacy </a>
+    		<a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+    		<a href="">Settings </a>
+    		</span>
+    	</div>
+    </div>
+
+  </body>
+</html>
